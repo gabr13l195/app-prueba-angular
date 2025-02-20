@@ -4,6 +4,7 @@
             <th>Nombre</th>
             <th>Plataforma</th>
             <th>Genero</th>
+            <th>Acciones</th>
         </tr>
     </thead>
     <tbody>
@@ -13,7 +14,13 @@
             <td>{{pelicula.nombre}}</td>
             <td>{{pelicula.plataforma}}</td>
             <td>{{pelicula.genero}}</td>
+            <td>
+                <!-- Importa el routerliknk y captura el ide generado en la coleccion -->
+                <button class="btn btn-secondary" [routerLink]="['/peliculas', pelicula.id]">
+                    Detalles
+                </button>
+            </td>
         </tr>
-    }
+        }
     </tbody>
 </table>

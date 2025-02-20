@@ -4,6 +4,7 @@ import { PeliculasComponent } from './pages/peliculas/peliculas.component';
 import { ContactosComponent } from './pages/contactos/contactos.component';
 import { GaleriaComponent } from './pages/galeria/galeria.component';
 import { Error404Component } from './pages/error404/error404.component';
+import { DetallesPeliculaComponent } from './pages/detalles-pelicula/detalles-pelicula.component';
 
 //Aqui van los redireccionamiento (rutas)
 
@@ -12,6 +13,7 @@ export const routes: Routes = [
     { path: 'peliculas', component: PeliculasComponent },
     { path: 'contactos', component: ContactosComponent },
     { path: 'galeria', component: GaleriaComponent },
+    { path: 'peliculas/:idPelicula', component: DetallesPeliculaComponent},
 
     //Si la ruta es blanca osea localhots:4040/
     // Este comando hace que redireccione siempre a home
@@ -20,4 +22,6 @@ export const routes: Routes = [
     //Si la ruta es diferente pero no blanca este comando 
     // redirecciona a error404 manualmente creado
     { path: '**', component: Error404Component }
+
+    
 ];
