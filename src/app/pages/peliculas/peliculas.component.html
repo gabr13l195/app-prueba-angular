@@ -15,7 +15,16 @@
     <hr>
 
     <span>
+        <button class="btn btn-warning" (click)="ocultar()">
+            Diurno/Nocturno
+        </button>
+
+        @if (nocturno==false) {
         <app-tabla></app-tabla>
+        }
+        @else {
+        <app-tabla2></app-tabla2>
+        }
     </span>
 
 

@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { TablaComponent } from "../../components/tabla/tabla.component";
+import { Tabla2Component } from "../../components/tabla2/tabla2.component";
 
 @Component({
   selector: 'app-peliculas',
-  imports: [CommonModule, TablaComponent],
+  imports: [CommonModule, TablaComponent, Tabla2Component],
   templateUrl: './peliculas.component.html',
   styleUrl: './peliculas.component.css'
 })
@@ -46,6 +47,12 @@ export class PeliculasComponent {
       genero: "Drama"
     },
   ]
+
+  nocturno = false;
+
+  ocultar (){
+    this.nocturno=!this.nocturno
+  }
 
 }
 
