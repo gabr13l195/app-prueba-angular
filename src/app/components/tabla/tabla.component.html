@@ -1,1 +1,19 @@
-<p>tabla works!</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Plataforma</th>
+            <th>Genero</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!--"pelicula" es cualquier palabra---"series" el nombre del objeto--Y recorre la cantidad de objetos que existe-->
+        @for (pelicula of series; track pelicula.nombre) {
+        <tr>
+            <td>{{pelicula.nombre}}</td>
+            <td>{{pelicula.plataforma}}</td>
+            <td>{{pelicula.genero}}</td>
+        </tr>
+    }
+    </tbody>
+</table>

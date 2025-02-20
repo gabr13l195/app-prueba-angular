@@ -1,1 +1,19 @@
-<p>contactos works!</p>
+<button class="btn btn-primary" (click)="visualizar()">
+    Spoiler
+</button>
+
+
+
+
+@if(ocultar){
+<div class="card" style="width:200px">
+    <img class="card-img-top" src="https://picsum.photos/100/50" alt="Card image">
+    <div class="card-body">
+        <h4 class="card-title">John Doe</h4>
+        <p class="card-text">Some example text.</p>
+        <a href="#" class="btn btn-primary">See Profile</a>
+    </div>
+</div>
+}@else {
+    <h5>Se ha ocultado la informacion</h5>
+}
