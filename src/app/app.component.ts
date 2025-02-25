@@ -6,7 +6,7 @@ import { ContactosComponent } from './pages/contactos/contactos.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, NavBarComponent, PeliculasComponent, ContactosComponent],
+  imports: [RouterOutlet, NavBarComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
